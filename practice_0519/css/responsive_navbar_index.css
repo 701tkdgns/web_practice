@@ -1,0 +1,139 @@
+html, body{
+    font-size: 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(34, 54, 69, .7);
+    font-weight: 500;
+}
+
+a:hover{
+    color: indigo;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.navbar{
+    background: white;
+    padding: 3rem 2rem;
+    height: 0rem;
+    min-height: 12vh;
+}
+
+.navbar .navbar-brand a{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+
+.navbar-brand{
+    font-size: 2.5rem;
+    color: indigo;
+}
+
+.navbar-toggler{
+    background: indigo;
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+.navbar-toggler span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: #fff;
+}
+
+.navbar-toggler span + span{
+    margin-top: 4px;
+    width: 18px;
+    margin-left: 4px;   
+}
+
+.navbar-toggler span + span + span{
+    width: 10px;
+    margin-left: 10px;   
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding:2rem 1.2rem;
+    font-size: 1.4rem;
+    position: relative;
+    height: 12vh;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    border-top: 4px solid indigo;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    border-top: 4px solid indigo;
+    color: indigo;
+}
+
+.navbar-nav button{
+    padding: 1.2rem 0;
+}
+
+.navbar-nav .btn{
+    background-color: indigo;
+    color: white;
+    border-radius: 0;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    margin-top: -10px;
+}
+
+.navbar-nav .btn:hover{
+    background-color: indigo;
+}
+
+
+
+/* Navbar template in html */
+/* <header class="header">
+<nav class="navbar fixed-top navbar-expand-lg header-nav fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">HappyDaram</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ABOUT">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        PROJECT
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <button class="btn">MENU</button>
+            </ul>
+        </div>
+    </div>
+</nav>
+</header> */
