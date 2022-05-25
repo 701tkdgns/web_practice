@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* projects */
+
+.projects .icon-box{
+  text-align: center;
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
+  padding: 80px 20px;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.projects .icon-box .icon{
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background-color: #00ff00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.projects .icon-box .icon i{
+  font-size: 24px;
+  transition: ease-in-out 0.3s;
+}
+
+.projects .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.projects .icon-box h4 a{
+  color: #00ff00;
+  transition: ease-in-out 0.3s;
+}
+
+.projects .icon-box h4 a:hover {
+  color: #33aa33;
+}
+
+.projects .icon-box p{
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.projects .icon-box:hover{
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
+}
+

@@ -1,0 +1,46 @@
+body{
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+/* REVIEW */
+#reviews {
+    background-image: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url(/image_file/jasper-unsplash.jpg);
+  }
+  
+  .review {
+    max-width: 900px;
+    min-height: 470px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .review img{
+    width: 85px !important;
+    border-radius: 1000px;
+    margin: auto;
+    margin-top: 10%; 
+  }
+  
+  .review h4{
+    margin-top: 16px;
+  }
+  
+  .review h4,
+  .review p{
+    color:#fff;
+  }
+  
+  .review small{
+    color: #fff;
+  }
+  
+  .review p{
+    margin-top: 28px;
+  }
+  
+  .owl-dot.active span{
+    background-color: #aaaaaa !important;
+  }
+  

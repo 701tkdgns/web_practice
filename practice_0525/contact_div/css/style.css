@@ -1,0 +1,78 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/* Contact */
+
+.contact .intro h2{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  color: #aaaaaa;
+  letter-spacing: 2px;
+}
+
+.contact .intro h2::after{
+  content: '';
+  width: 60px;
+  background-color: #484848;
+  height: 1px;
+  display: inline-block;
+  margin: 4px 10px;
+}
+
+.contact .intro h1{
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+.contact .info i {
+  font-size: 20px;
+  background: #aaaaaa;
+  /* color: #151515; */
+  float: left;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info i:hover{
+  background: rgb(170, 70, 40);
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #151515;
+}
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #484848;
+}
+
+.maps{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
