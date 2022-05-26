@@ -1,0 +1,8 @@
+nav {
+    transition: all .4s ease !important;
+}
+
+.banner-image{
+    background: url(/image_file/subtitle_image-unsplash.jpg);
+    background-size: cover;
+}

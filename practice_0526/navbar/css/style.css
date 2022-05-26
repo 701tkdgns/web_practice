@@ -1,0 +1,126 @@
+/*------------------------------------
+# General
+--------------------------------------*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color:#dc143c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+    color:#a52a2a;
+}
+
+/*------------------------------------
+# header
+--------------------------------------*/
+
+.header-background{
+    position: static;
+    display: block;
+    overflow: visible;
+    top: 0;
+    height: auto;
+    min-height: 92vh;
+    margin-bottom: 50px;
+    padding-bottom: 70px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(50,58,69,0.9)));
+    background: linear-gradient(180deg, rgba(50,58,69,0.9),rgba(50,58,69,0.9)), url(/image_file/title_background-unsplash.jpg);
+    flex-direction: column;
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto, cover;
+    white-space: normal;
+    object-fit: fill;
+    -o-object-fit: fill;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.header-background a{
+    color:#dc143c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.header-background a:hover{
+    color:#a52a2a;
+}
+
+.sticky-nav{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 1;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+}
+
+.navbar .navbar-brand a{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand{
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.navbar-toggler{
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+.navbar-toggler span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: #fff;
+}
+
+.navbar-toggler span + span{
+    margin-top: 4px;
+    width: 22px;
+}
+
+.navbar-toggler span +span + span{
+    width: 22px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active{
+    color: #dc143c;
+}
+
+.heading{
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+    margin-top: 180px;
+    margin-bottom: 8px;
+    min-height: 100px;
+}
