@@ -38,7 +38,23 @@
     });
 
 
+    //로딩
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+      window.addEventListener('load', () => {
+        preloader.style.display = 'none';
+      });
+    }
 
 
+    // backToTop 버튼
+    const gtbtn = document.querySelector('.backtotop');
+    window.addEventListener("scroll", function(){
+      if(window.scrollY > 700){
+        gtbtn.classList.add("active");
+      }else{
+        gtbtn.classList.remove("active");
+      }
+    });
 
 })()
