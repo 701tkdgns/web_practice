@@ -230,11 +230,71 @@ nav.active {
 # About
 ------------------------------------------------*/
 
-#test {
-    display: flex;
+#about .about-left img{
     width: 100%;
+    height: 40vh;
     background-size: cover;
 }
+
+#about .about-right{
+    padding-left : 3%;
+}
+
+#about .content h3{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+#about .content p:first-child{
+    font-style: italic !important;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#about .content ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#about .content ul li:first-child{
+    margin-top: 35px;
+}
+
+#about .content ul li{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+#about .content ul li i{
+    background: #fff;
+    box-shadow: 0px 6px 15px #10ea1b4f;
+    font-size: 24px;
+    padding: 20px;
+    margin-right: 15px;
+    color: #10eaa9;
+    border-radius: 50px;
+}
+
+#about .content ul h5{
+    font-size: 18px;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    display: block;
+}
+
+#about .content p:last-child{
+    margin-bottom: 0;
+}
+
+
+#about .content ul p{
+    font-size: 15px;
+}
+
+
 
 /*-----------------------------------------------
 # Services
@@ -299,24 +359,33 @@ nav.active {
 # Projects
 ------------------------------------------------*/
 
-#projects .project{
-    margin: 10px 0;
+#projects ul{
+    justify-content: center !important;
+    list-style-type: none;
+    display: flex !important;
 }
 
-#projects .project-left-side,
-#projects .project-right-side {
-    margin-top: 40px;
-}
-
-#projects .project-right-side {
-    padding-top: 50px;
-    line-height: 30px;
+#projects ul li{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
     font-size: 22px;
-    align-items: center;
-    justify-content: center;
-    /* text-align: center; */
-
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
 }
+
+#projects ul li.filter-active{
+    color: #106eea;
+}
+
+.project-container{
+    position: relative;
+    height: 1507.84px;
+}
+
 
 /*-----------------------------------------------
 # Reviews
@@ -391,16 +460,16 @@ nav.active {
     opacity: 1;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 500px) {
     #reviews {
       background-attachment: fixed;
     }
   }
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
     #reviews .swiper-slide p {
-      width: 80%;
+      max-width: 80%;
     }
-  }
+}
 
 
 /*-----------------------------------------------
@@ -440,20 +509,24 @@ nav.active {
 
 .team-member .social-links {
     position: absolute;
-    width: 40px;
     top: 60%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+    left: 10%;
+    justify-content: center;
+    padding: 0 10px;
+    transform: translate(-10%, -50%);
     transition: all 0.4s ease;
     opacity: 0;
 }
 
 .team-member .social-links i {
-    color: rgba(0, 0, 0, 0.5);
+    color: azure;
     transition: all 0.4s ease;
+    font-size: 32px;
     display: flex;
     width: 100%;
+    padding: 10px;
     background-size: cover;
+    border-radius: 50%;
 }
 
 .team-member:hover .overlay {
@@ -467,7 +540,7 @@ nav.active {
 }
 
 .team-member:hover .social-links i:hover {
-    color: azure;
+    color: rgba(8, 168, 69, 0.5);
 }
 
 .team-member h5 {
@@ -648,13 +721,13 @@ footer .social-links a{
 
 
 .backtotop{
-    background: #aaa;
+    background: #3ddda8;
     position: fixed;
     bottom: 50px;
     right: 50px;
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 7%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -666,13 +739,13 @@ footer .social-links a{
     transition: all .6s ease-in-out;
     color: white;
   }
-  
-  .backtotop:hover{
-    background: #3ddda8;
-  }
+
+.backtotop:hover{
+    color: white;
+}
   
   .backtotop.active{
-    bottom: 32px;
+    /* bottom: 32px; */
     pointer-events: auto;
     opacity: 1;
   }

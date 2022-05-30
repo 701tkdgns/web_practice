@@ -46,6 +46,7 @@
       spaceBetween: 30,
       loop: true,
       speed: 1000,
+      navigation:false,
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,
@@ -58,6 +59,11 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+      Response:{
+        1000:{
+          navigation:true,
+        }
+      }
     });
 
 
