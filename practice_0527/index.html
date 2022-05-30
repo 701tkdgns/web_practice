@@ -6,15 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/practice_0527/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/practice_0527/css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/practice_0527/css/google.fonts.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/practice_0527/css/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--style css-->
+    <link rel="stylesheet" href="/practice_0527/css/style.css">
+
     <title>Document</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
+    
     <!-- navigation section -->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-* fixed-top">
         <div class="container">
             <a class="navbar-brand" href=".">Practice</a>
@@ -52,12 +57,49 @@
 
 
     <!-- banner section -->
-    <section id="home">
+    <section id="home" class="d-flex align-items-center justify-content-center">
         <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8">
             <h1>WE CRAFT YOUR DREAM</h1>
-            <p>If you need anything you want<br>
-                we make it</p>
+            <h2>If you need anything you want<br>
+                we make it</h2>
+            </div>
         </div>
+
+        <div class="row gy-4 mt-5 justify-content-center">
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+                    <i class='bx bx-home-alt-2' ></i>
+                    <h3><a href="#">링크</a></h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+                    <i class='bx bx-baguette' ></i>
+                    <h3><a href="#">링크</a></h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                    <h3><a href="#">링크</a></h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                    <h3><a href="#">링크</a></h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                    <h3><a href="#">링크</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
 
     <!-- About section -->
@@ -66,7 +108,7 @@
             <div class="row">
                 <div class="col-12 intro text-center">
                     <h6>About</h6>
-                    <h3>What are we?</h3>
+                    <h3>Intro</h3>
                 </div>
                 <div class="col-12">
                     <img id="test" src="/image_file/jasper-unsplash.jpg" alt="">
@@ -84,7 +126,7 @@
             </div>
       
             <div class="row gy-4">
-              <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+              <div class="col-lg-4 col-md-6 d-flex align-items-strech" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                   <div class="icon"><img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt=""></div>
                   <h3>1. 시작</h3>
@@ -94,7 +136,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+              <div class="col-lg-4 col-md-6 d-flex align-items-strech" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                   <div class="icon"><img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt=""></div>
                   <h3>1. 시작</h3>
@@ -104,7 +146,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+              <div class="col-lg-4 col-md-6 d-flex align-items-strech" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                   <div class="icon"><img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt=""></div>
                   <a href=""><h3>1. 시작</h3></a> 
@@ -114,7 +156,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+              <div class="col-lg-4 col-md-6 d-flex align-items-strech" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                   <div class="icon"><img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt=""></div>
                   <h3>1. 시작</h3>
@@ -124,7 +166,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+              <div class="col-lg-4 col-md-6 d-flex align-items-strech" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                   <div class="icon"><img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt=""></div>
                   <h3>1. 시작</h3>
@@ -134,7 +176,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+              <div class="col-lg-4 col-md-6 d-flex align-items-strech" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon-box">
                   <div class="icon"><img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt=""></div>
                   <h3>1. 시작</h3>
@@ -149,6 +191,37 @@
           </div>
     </section>
 
+    <!-- Reviews section -->
+    <section id="reviews">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/image_file/user.png" alt="" class="review-img">
+                <h3>Co. name1</h3>
+                <h4>Name</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="/image_file/user.png" alt="" class="review-img">
+                <h3>Co. name2</h3>
+                <h4>Name</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img src="/image_file/user.png" alt="" class="review-img">
+                <h3>Co. name3</h3>
+                <h4>Name</h4>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    </section>
+
     <!-- Projects section -->
     <section id="projects">
         <div class="container">
@@ -158,11 +231,11 @@
                     <h3>What we make?</h3>
                 </div>
                 <div class="row project">
-                    <div class="col-lg-6 col-order-1 project-left-side">
+                    <div class="col-lg-6 col-order-1 project-left-side" data-aos="fade-right" data-aos-delay="150">
                         <img id="test" src="/image_file/jasper-unsplash.jpg" alt="">
                     </div>
 
-                    <div class="col-lg-6 col-order-1 project-right-side">
+                    <div class="col-lg-6 col-order-1 project-right-side" data-aos="fade-left" data-aos-delay="150">
                         <p class="project-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -173,7 +246,7 @@
                     </div>
                 </div>
                 <div class="row project">
-                    <div class="col-lg-6 col-order-1 project-right-side">
+                    <div class="col-lg-6 col-order-1 project-right-side" data-aos="fade-right" data-aos-delay="150">
                         <p class="project-paragraph">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -182,7 +255,7 @@
                             anim id est laborum."
                         </p>
                     </div>
-                    <div class="col-lg-6 col-order-1 project-left-side">
+                    <div class="col-lg-6 col-order-1 project-left-side" data-aos="fade-left" data-aos-delay="150">
                         <img id="test" src="/image_file/jasper-unsplash.jpg" alt="">
                     </div>
 
@@ -202,7 +275,7 @@
                 </div>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-member">
                         <div class="img-wrapper">
                             <img src="/image_file/user.png" class="profile_img" alt="">
@@ -220,12 +293,12 @@
                             </div>
                         </div>
                         <div class="content">
-                            <h5>YOUR NAME</h5>
+                            <h5>YOUR NAME1</h5>
                             <p>YOUR POSITION</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-member">
                         <div class="img-wrapper">
                             <img src="/image_file/user.png" class="profile_img" alt="">
@@ -243,12 +316,12 @@
                             </div>
                         </div>
                         <div class="content">
-                            <h5>YOUR NAME</h5>
+                            <h5>YOUR NAME2</h5>
                             <p>YOUR POSITION</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-member">
                         <div class="img-wrapper">
                             <img src="/image_file/user.png" class="profile_img" alt="">
@@ -266,12 +339,12 @@
                             </div>
                         </div>
                         <div class="content">
-                            <h5>YOUR NAME</h5>
+                            <h5>YOUR NAME3</h5>
                             <p>YOUR POSITION</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-member">
                         <div class="img-wrapper">
                             <img src="/image_file/user.png" class="profile_img" alt="">
@@ -289,12 +362,12 @@
                             </div>
                         </div>
                         <div class="content">
-                            <h5>YOUR NAME</h5>
+                            <h5>YOUR NAME4</h5>
                             <p>YOUR POSITION</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-member">
                         <div class="img-wrapper">
                             <img src="/image_file/user.png" class="profile_img" alt="">
@@ -312,12 +385,12 @@
                             </div>
                         </div>
                         <div class="content">
-                            <h5>YOUR NAME</h5>
+                            <h5>YOUR NAME5</h5>
                             <p>YOUR POSITION</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="team-member">
                         <div class="img-wrapper">
                             <img src="/image_file/user.png" class="profile_img" alt="">
@@ -335,7 +408,7 @@
                             </div>
                         </div>
                         <div class="content">
-                            <h5>YOUR NAME</h5>
+                            <h5>YOUR NAME6</h5>
                             <p>YOUR POSITION</p>
                         </div>
                     </div>
@@ -366,11 +439,21 @@
 
         <div class="container">
             <div class="col-lg-4">
-                <div class="info">
+                <div class="info" data-aos="fade-right" data-aos-delay="150">
                     <div class="address">
                         <img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt="">
                         <h4>address:</h4>
                         <p>인천 인하드림센터 1관</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="info" data-aos="fade-right" data-aos-delay="150">
+                    <div class="email">
+                        <img src="/image_file/icons/youtube_tv_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                        <h4>email:</h4>
+                        <p>123@1234.com</p>
                     </div>
                 </div>
             </div>
@@ -421,8 +504,9 @@
 
 
     <!-- js framework section -->
-    <script src="/practice_0527/scripts/bootstrap.bundle.min.js"></script>
-
+    <script src="/practice_0527/scripts/bootstrap.bundle.min.js"></script>  
+    <script src="/practice_0527/scripts/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- main js section -->
     <script src="/practice_0527/scripts/app.js"></script>

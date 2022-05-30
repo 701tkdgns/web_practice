@@ -1,6 +1,9 @@
 (function () {
     "use strict";
 
+    // AOS init
+    AOS.init();
+
 
     // 스크롤 시 네비게이션 바의 색상이 짙어지는 함수
     const nav = document.querySelector('.navbar');
@@ -35,6 +38,26 @@
     const bsCollapse = new bootstrap.Collapse(menuToggle);
     navLinks.forEach((l) => {
         l.addEventListener('click', () => { bsCollapse.toggle() })
+    });
+
+    // 리뷰 스위퍼(스크롤)
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      speed: 1000,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
 
 

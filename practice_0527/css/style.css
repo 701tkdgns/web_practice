@@ -142,28 +142,89 @@ nav.active {
     background: linear-gradient(rgba(44, 44, 44, 0.473), rgba(44, 44, 44, 0.473)), url(/image_file/jasper-unsplash.jpg);
     background-size: cover;
     overflow: hidden;
+    position: relative;
+}
+
+#home .container{
+    position: relative;
+    padding-top: 74px;
+    text-align: center;
 }
 
 #home h1 {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 40%;
+    margin: 0;
+    font-size: 50px;
     font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+}
+
+#home h2{
+    color: rgba(255, 255, 255, 0.9);
+    margin: 10px 0 0 0;
+    font-size: 24px;
     font-style: italic;
 }
 
-#home p {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5px;
+#home .icon-box {
+    padding: 30px 20px;
+    transition: ease-in-out 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100%;
     text-align: center;
+  }
+
+#home .icon-box i{
+    font-size: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 5px;
 }
 
+#home .icon-box h3 {
+    font-weight: 700;
+    margin: 10px 0 0 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#home .icon-box h3 a {
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+#home .icon-box h3 a:hover {
+    color: #00ff00;
+}
+
+#home .icon-box:hover{
+    border-color: #00ff00;
+}
+
+@media (min-width: 1024px) {
+    #about .pc { display:block; }
+    #about .mobile { display:none; }
+    #home {
+      background-attachment: fixed;
+    }
+  }
+  @media (max-width: 768px) {
+    #about .pc { display:none; }
+    #about .mobile { display:block; }
+    #home {
+      height: auto;
+    }
+    #home h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    #home h2 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+}
 
 /*-----------------------------------------------
 # About
@@ -258,6 +319,91 @@ nav.active {
 }
 
 /*-----------------------------------------------
+# Reviews
+------------------------------------------------*/
+
+#reviews{
+    margin-top: 30px;
+    padding: 80px 0;
+    background: linear-gradient(rgba(170, 170, 170, 0.575),rgba(170, 170, 170, 0.575)), url(/image_file/title_background-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#reviews::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);  
+}
+
+#reviews .section-header {
+    margin-bottom: 40px;
+}
+
+#reviews #reviews-carousel, #reviews #reviews-slider{
+    overflow: hidden;
+}
+
+#reviews .swiper-slide{
+    text-align: center;
+    color: #fff
+}
+
+#reviews .swiper-slide .review-img{
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+}
+
+#reviews .swiper-slide h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #fff;
+}
+
+#reviews .swiper-slide h4{
+    font-size: 14px;
+    color: #ddd;
+    margin: 0 0 15px 0;
+}
+
+#reviews .swiper-slide p{
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    color: #eee;
+}
+
+
+#reviews .swiper-pagination{
+    margin-top: 20px;
+    position: relative;
+}
+
+#reviews .swiper-pagination .swiper-pagination-bullet-active{
+    background-color: #00ff00;
+    opacity: 1;
+}
+
+@media (min-width: 1024px) {
+    #reviews {
+      background-attachment: fixed;
+    }
+  }
+  @media (min-width: 992px) {
+    #reviews .swiper-slide p {
+      width: 80%;
+    }
+  }
+
+
+/*-----------------------------------------------
 # Team
 ------------------------------------------------*/
 
@@ -268,6 +414,10 @@ nav.active {
 .team-member .img-wrapper {
     overflow: hidden;
     position: relative;
+    border: 1px solid #aaa;
+    border-radius: 5%;
+    background: linear-gradient(rgba(170, 170, 170, 0.575),rgba(170, 170, 170, 0.575)), url(/image_file/title_background-unsplash.jpg);
+    background-size: cover;
 }
 
 .team-member .img-wrapper .profile_img,
@@ -324,7 +474,6 @@ nav.active {
     margin-top: 24px;
 }
 
-
 /*-----------------------------------------------
 # Contact
 ------------------------------------------------*/
@@ -361,6 +510,7 @@ nav.active {
 .contact .info {
     width: 100%;
     background: #fff;
+    margin: 10px 0;
 }
 
 .contact .info img {
@@ -378,7 +528,7 @@ nav.active {
 }
 
 .contact .info img:hover {
-    background: rgba(114, 170, 40, 0.801);
+    background: rgba(170, 240, 80, 0.89);
 }
 
 .contact .info h4 {
@@ -498,7 +648,7 @@ footer .social-links a{
 
 
 .backtotop{
-    background: #257a5e;
+    background: #aaa;
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -517,6 +667,9 @@ footer .social-links a{
     color: white;
   }
   
+  .backtotop:hover{
+    background: #3ddda8;
+  }
   
   .backtotop.active{
     bottom: 32px;
