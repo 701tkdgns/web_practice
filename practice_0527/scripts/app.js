@@ -2,7 +2,9 @@
     "use strict";
 
     // AOS init
-    AOS.init();
+    AOS.init({
+      once: true
+  });
 
 
     // 스크롤 시 네비게이션 바의 색상이 짙어지는 함수
@@ -64,6 +66,25 @@
           navigation:true,
         }
       }
+    });
+
+    
+    // 포트폴리오 필터
+    $(document).ready(function(){
+      $(".project-filter-button").click(function(){
+        const value = $(this).attr('data-filter');
+
+        if(value == "all"){
+          $(".filter").show('1000');
+        }
+        else{
+          $(".filter").not('.'+value).hide('3000');
+          $(".filter").filter('.'+value).show('3000');
+        }
+      });
+      $('.project-filter-button').click(function(){
+        $(this).addClass('active').siblings().removeClass('active');
+      });
     });
 
 

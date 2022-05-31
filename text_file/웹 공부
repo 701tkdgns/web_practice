@@ -8,4 +8,117 @@ Padding : 클래스 안의 요소들의 내부거리
 배경사진 위에 객체 올릴 땐, img 초기화 후 css에서 배경화면 불러오기
 안그럴시 배경사진 밑에 다음 객체로 문자열 등장
 
+기존 display >> vertical
+display : flex >> horizontal 
+
+flex-wrap : 웹사이트 witdh 크기만큼 flex 진행 후
+            밑줄로 내려옴
+
 개발자 도구 스타일 잘 확인할 것
+
+ 
+
+- M/P 의 의미
+       - P : Padding을 의미
+       - M : Margin을 의미
+
+- t , b , l , r ,x , y 의 의미
+       - t : top을 의미 
+       - b : bottom을 의미
+       - l : left을 의미
+       - r : right을 의미
+       - x : x축 -> left , right을 의미
+       - y : y축 -> top , bottom을 의미
+
+- 0, 1, 2, 3, 4, 5, auto 의 의미
+       - 0 : 0
+       - 1 : .25rem( font-size가 16px이면, 4px) 크기
+       - 2 : .5rem( font-size가 16px이면, 8px) 크기
+       - 3 : 1rem( font-size가 16px이면, 16px) 크기
+       - 4 : 1.5rem( font-size가 16px이면, 24px) 크기
+       - 5 : 3rem( font-size가 16px이면, 48px) 크기
+       - auto : margin의 자동으로 세팅
+
+- 0, 1, 2, 3, 4, 5, auto 의 의미
+       - 0 : 0
+       - 1 : .25rem( font-size가 16px이면, 4px) 크기
+       - 2 : .5rem( font-size가 16px이면, 8px) 크기
+       - 3 : 1rem( font-size가 16px이면, 16px) 크기
+       - 4 : 1.5rem( font-size가 16px이면, 24px) 크기
+       - 5 : 3rem( font-size가 16px이면, 48px) 크기
+       - auto : margin의 자동으로 세팅
+
+- n1, n2, n3, n4, n5 의 의미 
+       - n : negative을 의미
+       - n1 : -.25rem( font-size가 16px이면, -4px) 크기
+       - n2 : -.5rem( font-size가 16px이면, -8px) 크기
+       - n3 : -1rem( font-size가 16px이면, -16px) 크기
+       - n4 : -1.5rem( font-size가 16px이면, -24px) 크기
+       - n5 : -3rem( font-size가 16px이면, -48px) 크기
+출처: https://minaminaworld.tistory.com/136 [미나미 블로그:티스토리]
+
+
+
+
+position:static
+
+position 프로퍼티의 기본값으로 position 프로퍼티를 지정하지 않았을 때와 같은 상태입니다.
+
+기본적인 요소의 배치 순서에 따라 위에서 아래로, 왼쪽에서 오른쪽으로 순서에 따라 배치되고 부모 요소 내에 자식 요소로서 존재할 때는 부모 요소의 위치를 기준으로 배치됩니다.
+
+기본적으로 이 값을 지정할 일은 없지만 이미 설정된 position을 무력화하기 위해 사용될 수 있습니다.
+
+
+
+position:relative
+
+그자체로는 특별한 의미가 없습니다.
+
+딱히 어느 위치로 이동하지는 않습니다. 위치를 이동시켜주는 top, right, bottom, left 프로퍼티가 있어야 원래의 위치에서 이동할 수 있습니다.
+
+static을 선언한 요소와 relative를 선언한 요소의 차이점은 좌표 프로퍼티의 동작 여부 뿐 그외는 동일합니다.
+
+
+
+position: absolute
+
+이름과 같이 절대적인 위치에 둘 수 있습니다.
+
+어떤 기준으로 절대적이냐 하면, 특정 부모에 대해 절대적으로 움직이게 됩니다.
+부모 중에 position이 relative, fixed, absolute 하나라도 있으면 그 부모에 대해 절대적으로 움직이게 됩니다. 일반적으로 absolute를 쓸 경우, 절대적으로 움직이고 싶은 부모에게 position: relative; 를 부여하면 됩니다.
+
+만일 부모가 static인 경우, document body를 기준으로 하여 좌표 프로퍼티대로 위치하게 됩니다. 따라서 부모 요소를 배치의 기준으로 삼기 위해서는 부모 요소에 relative를 정의하여야 합니다.
+
+이때 다른 요소가 먼저 위치를 점유하고 있어도 뒤로 밀리지 않고 덮어쓰게 됩니다. (참고: 이런 특성을 부유 또는 부유 객체라 합니다.)
+
+absolute 선언 시, block 레벨 요소의 width는 inline 요소와 같이 content에 맞게 변화되므로 적절한 width를 지정하여야 합니다.
+
+
+
+relative와 absolute의 차이점
+
+relative는 기본 위치(static으로 지정되었을 때의 위치)를 기준으로 좌표 프로퍼티(top, bottom, left, right)를 사용하여 위치를 이동시킵니다. 따라서 무조건 부모를 기준으로 위치하게 됩니다.
+
+absolute는 부모에 static 이외의 position 프로퍼티가 지정되어 있을 경우에만 부모를 기준으로 위치하게 됩니다. 만일 부모, 조상이 모두 static인 경우, document body를 기준으로 위치하게 됩니다.
+따라서 absolute 프로퍼티 요소는 부모 요소의 영역을 벗어나 자유롭게 어디든지 위치할 수 있습니다.
+
+
+
+
+position:fixed
+
+부모 요소와 관계없이 브라우저의 viewport를 기준으로 좌표프로퍼티(top, bottom, left, right)을 사용하여 위치를 이동시킵니다.
+
+스크롤이 되더라도 화면에서 사라지지 않고 항상 같은 곳에 위치가 고정(fixed)됩니다.
+
+fixed 프로퍼티 선언 시 주의할 점은, block 요소의 width는 inline 요소와 같이 content에 맞게 변화되므로 적절한 width를 지정하여야 한다는 점 입니다.
+
+
+overflow
+overflow 프로퍼티는 자식 요소가 부모 요소의 영역를 벗어났을 때 처리 방법을 정의합니다.
+
+visible 영역을 벗어난 부분을 표시합니다. (기본값)
+hidden 영역을 벗어난 부분을 잘라내어 보이지 않게 합니다.
+auto 영역을 벗어난 부분이 있을때만 스크롤을 표시합니다.
+scroll 영역을 벗어난 부분이 없어도 스크롤을 표시합니다.(현재 대부분 브라우저는 auto와 동일하게 작동합니다.)
+출처 : https://velog.io/@rimu/css-%EC%9A%94%EC%86%8C%EC%9D%98-%EC%9C%84%EC%B9%98position-%EC%A0%95%EB%A6%AC
