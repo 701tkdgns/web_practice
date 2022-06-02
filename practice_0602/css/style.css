@@ -1,0 +1,644 @@
+/*----------------------------------------------
+# General
+----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.intro-text{
+  margin: 30px auto;
+}
+
+/*----------------------------------------------
+# navbar
+----------------------------------------------*/
+
+nav {
+  transition: all .5s ease;
+}
+
+nav.active {
+  opacity: 0.8;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+  /* color: #fff; */
+  font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+/* nav toggler 메뉴버튼 x표시 변경하는 부분 */
+/* 참고 :  https://www.youtube.com/watch?v=_MrShB9fh7U&list=PL0rwf9i1eWpldSD0EgjaZj_J6jSeLKqQm&index=21 */
+
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 5px;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border: 1px;
+  opacity: 1;
+  left: 0;
+  border-radius: 10px;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -10px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 10px;
+  transform: rotate(0deg);
+}
+
+
+
+/*-----------------------------------------------
+# Home
+------------------------------------------------*/
+
+#Home{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(44, 44, 44, 0.473), rgba(44, 44, 44, 0.473)), url(/image_file/title_background-unsplash.jpg);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#Home .container{
+    position: relative;
+    padding-top: 74px;
+    text-align: center;
+}
+
+#Home h1{
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+}
+
+#Home p{
+    color: rgba(255, 255, 255, 0.911);
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#Home .icon-box{
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 30px 20px;
+    height: 100%;
+    color: #444;
+    transition: all .3s ease;
+}
+
+#Home .icon-box i{
+    padding: 5px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+
+#Home .icon-box:hover,
+#Home .icon-box:hover i{
+    border: 1px solid #aaa;
+    color: #aaa;
+}
+
+@media (min-width: 1024px) {
+  #about .pc { display:block; }
+  #about .mobile { display:none; }
+  #home {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px) {
+  #about .pc { display:none; }
+  #about .mobile { display:block; }
+  #home {
+    height: auto;
+  }
+  #home h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #home h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+
+
+/*-----------------------------------------------
+# About
+------------------------------------------------*/
+
+/* About left-side : 스위퍼 슬라이더 */
+
+#About .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+   /* Center slide text vertically */
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutSwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.aboutSwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.aboutSwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.aboutSwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+#About .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* about 오른쪽 */
+
+.about-right{
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-right-title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+
+.about-icon-box i{
+  float: left;
+  width: 60px;
+  height: 60px;
+  font-size: 42px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.about-icon-box h4{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 70px;
+  line-height: 1.2;
+}
+
+.about-icon-box p{
+  margin-left: 70px;
+  line-height: 1.2;
+  font-size: 15px;
+}
+
+
+/*-----------------------------------------------
+# Services
+------------------------------------------------*/
+
+#Services .service-icon-box{
+  text-align: center;
+  padding: 80px 20px;
+  border: .1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+}
+
+#Services .service-icon-box i{
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  background-color: #aaa;
+  border: .1px solid #aaa;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+#Services .service-icon-box h3{
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #151515;
+  transition: ease-in-out 0.3s;
+}
+
+#Services .service-icon-box p{
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+#Services .service-icon-box:hover{
+  background-color: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+}
+
+
+/*-----------------------------------------------
+# Projects
+------------------------------------------------*/
+
+
+/*-----------------------------------------------
+# Reviews
+------------------------------------------------*/
+
+#Reviews{
+  margin-top: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.336),rgba(0, 0, 0, 0.336)), url(/image_file/title_background-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+
+#Reviews::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);  
+}
+
+#Reviews .section-header{
+  margin-bottom: 40px;
+}
+
+#Reviews #Reviews-carousel, #Reviews #Reviews-slider{
+  overflow: hidden;
+}
+
+#Reviews .swiper-slide{
+  text-align: center;
+  color: #fff
+}
+
+#Reviews .swiper-slide .review-img{
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+
+#Reviews .swiper-slide h3{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 0px 0;
+  color: #fff;
+}
+
+#Reviews .swiper-slide h4{
+  font-size: 14px;
+  color: #ddd;
+}
+
+#Reviews .swiper-button-next{
+  background-position: center;
+  background-color: rgba(170, 170, 170, 0.384);
+  width: 40px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+
+#Reviews .swiper-button-prev{
+  background-position: center;
+  color: #fff;
+  background-color: rgba(170, 170, 170, 0.384);
+  width: 40px;
+  border-radius: 5px;
+}
+
+#Reviews .swiper-button-next i,
+#Reviews .swiper-button-prev i{
+  font-size: 20px;
+}
+
+#Reviews .swiper-button-next::after,
+#Reviews .swiper-button-prev::after{
+  display: none;
+}
+
+
+
+
+@media (min-width: 1024px) {
+  .testimonials {
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 992px) {
+  .testimonials .testimonial-item p {
+    width: 80%;
+  }
+}
+
+/*-----------------------------------------------
+# Portfolio
+------------------------------------------------*/
+
+#Projects{
+  background-color: #fff;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.project-filter-list ul{
+  display: flex;
+  left: 0;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.project-filter-button{
+  width: 70px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  color: #444444;
+  border: 1px solid #44444459;
+  margin: 0 10px 30px 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.project-filter-button:first-child{
+  margin-left: 0px;
+}
+
+.project-filter-button:hover{
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid #aaa;
+  background-color: #aaa;
+}
+
+.project-filter-button.active{
+  background-color: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+}
+
+.gallery_product{
+  position: relative;
+}
+
+.gallery_product img{
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background-size: cover;
+}
+
+.gallery_product .image__overlay{
+  position: absolute;
+  top: 0;
+  left: 1;
+  width: 98%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.gallery_product .image__overlay > *{
+  transform: translateY(20px);
+  transition: transform 0.4s;
+}
+
+.gallery_product .image__overlay:hover{
+  opacity: 1;
+}
+
+.gallery_product .image__overlay:hover > *{
+  transform: translateY(0px);
+}
+
+.gallery_product .image__overlay .img__title{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.gallery_product .image__overlay .image__description{
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+/*-----------------------------------------------
+# Team
+------------------------------------------------*/
+
+
+
+/*-----------------------------------------------
+# Contact
+------------------------------------------------*/
+
+
+/* 구글 맵 크기 */
+.contact_map iframe{
+  width: 100%;
+  height: 450px;
+  margin: 30px auto 50px auto;
+}
+
+.contact-info i{
+  float: left;
+  margin-right: 10px;
+  font-size: 20px;
+  width: 44px;
+  color: #444;
+  height: 44px;
+  background-color: #eef7ff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 1px solid #eef7ff;
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+}
+
+.address,
+.email,
+.phone{
+  margin: 20px auto;
+}
+
+.address:hover i,
+.email:hover i,
+.phone:hover i{
+  color: #eef7ff;
+  background-color: #aaa;
+  border-color: #aaa;
+}
+
+.contact-info h4{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 60px;
+  line-height: 1.2;
+}
+
+.contact-info p{
+  font-style: italic;
+  margin-left: 60px;
+  line-height: 1.2;
+  font-size: 15px;
+}
+
+
+/*-----------------------------------------------
+# Footer
+------------------------------------------------*/
+
+
+
+/*-----------------------------------------------
+# Preloader
+------------------------------------------------*/
+
+
+
+/*-----------------------------------------------
+# BacktoTop
+------------------------------------------------*/
+
+
+

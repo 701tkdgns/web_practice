@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 버전 체크 필수 -->
+    <!-- import css -->
+        <link rel="stylesheet" href="/practice_0602/css/bootstrap.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="/practice_0602/css/swiper-bundle.min.css">
+    <!-- style css -->
+        <link rel="stylesheet" href="/practice_0602/css/style.css">
+        
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    
+    <!-- nav section -->
+    <section id="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-* fixed-top">
+            <div class="container">
+            <a class="navbar-brand" href=".">Navbar</a>
+
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#Home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Portfolios">Portfolios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </section>
+    
+
+    <!-- home section -->
+    <section id="Home" class="d-flex align-items-center justify-content-center">
+        <div class="container">
+            <!-- 데이터 받을 시 수정해야할 부분 -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 home_intro">
+                    <h1>홈페이지 이름</h1>
+                    <p>홈페이지 소개 문구</p>
+                </div>
+            </div>
+
+            <div class="row gy-4 mt-5 justify-content-center">
+                <div class="col-lg-2 col-md-6">
+                    <a href="#">
+                        <div class="icon-box">
+                            <i class='bx bx-home-alt-2' ></i>
+                            <h3>링크</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <a href="#">
+                        <div class="icon-box">
+                            <i class='bx bxs-music' ></i>
+                            <h3>링크</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <a href="#">
+                        <div class="icon-box">
+                            <i class='bx bxs-phone' ></i>
+                            <h3>링크</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <a href="#">
+                        <div class="icon-box">
+                            <i class='bx bxs-tag' ></i>
+                            <h3>링크</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about section -->
+    <section id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 intro-text text-center">
+                    <h6>About</h6>
+                    <h3>About us</h3>
+                </div>
+            </div>
+            
+            <!-- 데이터 받을 시 수정해야할 부분 -->
+
+            <div class="row">
+                <div class="col-lg-6 about-left">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                     class="swiper aboutSwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper aboutSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 about-right">
+                    <div class="about-right-title"><h3>About 소개</h3></div>
+                    <div class="about-icon-box mt-5 mt-lg-0">
+                        <i class='bx bx-home-alt-2' ></i>
+                        <h4>요약 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="about-icon-box mt-5 mt-lg-0">
+                        <i class='bx bx-home-alt-2' ></i>
+                        <h4>요약 2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="about-icon-box mt-5 mt-lg-0">
+                        <i class='bx bx-home-alt-2' ></i>
+                        <h4>요약 3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="about-icon-box mt-5 mt-lg-0">
+                        <i class='bx bx-home-alt-2' ></i>
+                        <h4>요약 4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- services section -->
+    <section id="Services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 intro-text text-center">
+                    <h6>Services</h6>
+                    <h3>Our services</h3>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+                    <div class="service-icon-box">
+                        <i class='bx bx-home-alt-2' ></i>
+                        <h3>1. 시작</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+                    <div class="service-icon-box">
+                        <i class='bx bx-home-alt-2' ></i>
+                        <h3>1. 시작</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+                    <div class="service-icon-box">
+                        <i class='bx bx-home-alt-2' ></i>
+                        <h3>1. 시작</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+                    <div class="service-icon-box">
+                        <i class='bx bx-home-alt-2' ></i>
+                        <h3>1. 시작</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+                    <div class="service-icon-box">
+                        <i class='bx bx-home-alt-2' ></i>
+                        <h3>1. 시작</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 d-flex align-items-strech">
+                    <div class="service-icon-box">
+                        <i class='bx bx-home-alt-2' ></i>
+                        <h3>1. 시작</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- projects section -->
+    <section id="Projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 intro-text text-center">
+                    <h6>Project</h6>
+                    <h3>Our Project</h3>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </section>
+
+    <!-- reviews section-->
+    <section id="Reviews" class="Reviews">
+        <div class="container">
+            <div class="swiper reviewSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/image_file/user.png" alt="" class="review-img">
+                        <h3>Co. name1</h3>
+                        <h4>Name</h4>
+                        <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/image_file/plus.png" alt="" class="review-img">
+                        <h3>Co. name1</h3>
+                        <h4>Name</h4>
+                        <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세<br>
+                            남산위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리기상 일세
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/image_file/user.png" alt="" class="review-img">
+                        <h3>Co. name1</h3>
+                        <h4>Name</h4>
+                        <p>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라만세<br>
+                            남산위에 저 소나무 철갑을 두른듯 바람서리 불변함은 우리기상 일세<br>
+                            가을하늘 공활한데 높고 구름없이 밝은달은 우리가슴 일편단심일세
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"><i class='bx bx-right-arrow-alt'></i></div>
+                <div class="swiper-button-prev"><i class='bx bx-left-arrow-alt' ></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section -->
+    <section id="Portfolios">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 intro-text text-center">
+                    <h6>Porfolio</h6>
+                    <h3>Our Porfolio</h3>
+                </div>
+            </div>
+
+            <div class="project-filter-list">
+                <ul>
+                    <li class="project-filter-button active" data-filter="all">All</li>
+                    <li class="project-filter-button" data-filter="A">A</li>
+                    <li class="project-filter-button" data-filter="B">B</li>
+                    <li class="project-filter-button" data-filter="C">C</li>
+                </ul>
+            </div>
+
+            <div class="row g-2">
+                <div class="gallery_product col-lg-4 col-md-6 filter center A">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/jasper-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-6 filter center B">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/subtitle_image-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-6 filter center C">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/title_background-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_product col-lg-4 col-md-6 filter center A">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/jasper-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_product col-lg-4 col-md-6 filter center B">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/subtitle_image-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_product col-lg-4 col-md-6 filter center C">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/title_background-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_product col-lg-4 col-md-6 filter center A">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/jasper-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_product col-lg-4 col-md-6 filter center B">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/subtitle_image-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_product col-lg-4 col-md-6 filter center C">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/title_background-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_product col-lg-4 col-md-6 filter center A">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/jasper-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_product col-lg-4 col-md-6 filter center B">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/subtitle_image-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery_product col-lg-4 col-md-6 filter center C">
+                    <a href="#" target="_blank">
+                        <img src="/image_file/title_background-unsplash.jpg" alt="">
+                        <div class="image__overlay">
+                            <h2 class="img__title">img_title</h2>
+                            <p class="image__description">paragraph</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- contact section -->
+    <section id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 intro-text text-center">
+                    <h6>Contact</h6>
+                    <h3>Contact us</h3>
+                </div>
+            </div>
+
+            <!-- 데이터 받을 시 수정해야할 부분 -->
+            <div class="row">
+                <div class="col-lg-12 contact_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.583538772849!2d126.65641705361472!3d37.44767511527944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b79abb0b1b611%3A0xefaddd1c27fcca5a!2z7J247ZWY65Oc66a87IS87YSwIDHqtIA!5e0!3m2!1sko!2skr!4v1654145007949!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- 데이터 받을 시 수정해야할 부분 -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-leftside">
+                        <div class="contact-info">
+                            <div class="address">
+                                <i class='bx bx-home-alt-2'></i>
+                                <h4>Address</h4>
+                                <p>인천광역시 인하드림센터 1관</p>
+                            </div>
+                            <div class="email">
+                                <i class='bx bx-envelope'></i>
+                                <h4>Email</h4>
+                                <p>abc@practice.com</p>
+                            </div>
+                            <div class="phone">
+                                <i class='bx bx-mobile'></i>
+                                <h4>Phone</h4>
+                                <p>+82 123 - 1234</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-6 contact-right-side">
+            
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <!-- footer section -->
+    <section id="Footer"></section>
+
+    
+
+    <!-- preloader section -->
+    <section id="Preloader"></section>
+
+    
+
+    <!-- backtotop section -->
+    <section id="BacktoTop"></section>
+
+    
+
+
+    <!-- import script -->
+        <script src="/practice_0602/scripts/bootstrap.bundle.min.js"></script>
+        <script src="/practice_0602/scripts/jquery.min.js"></script>
+        <script src="/practice_0602/scripts/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- style js -->
+        <script src="/practice_0602/scripts/main.js"></script>
+    </body>
+</html>

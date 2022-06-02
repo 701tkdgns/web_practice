@@ -1,3 +1,7 @@
+
+개발자 도구 스타일 잘 확인할 것
+
+
 Margin : 클래스간 거리
 Padding : 클래스 안의 요소들의 내부거리
 공통점 : 12시를 기준으로 시계방향으로 거리 조절 : 12(상) 3(동) 6(하) 9(서)
@@ -8,15 +12,38 @@ Padding : 클래스 안의 요소들의 내부거리
 배경사진 위에 객체 올릴 땐, img 초기화 후 css에서 배경화면 불러오기
 안그럴시 배경사진 밑에 다음 객체로 문자열 등장
 
+
+
+
+
 기존 display >> vertical
 display : flex >> horizontal 
 
-flex-wrap : 웹사이트 witdh 크기만큼 flex 진행 후
-            밑줄로 내려옴
 
-개발자 도구 스타일 잘 확인할 것
 
- 
+default : block 특성의 요소로 요소간 width를 꽉 채운 상태로 세로로 나열하게 됨
+
+d-flex : in-line으로 성격이 바뀌며 컨테이너 안의 요소 크기만큼 줄어든 상태로 배치가 됨(가로로 나열되는 형식)
+         > d-flex가 부여된 자신은 block, 자식은 in-line 
+
+d-inline-flex : 부모또한 inline의 특성을 갖는 상태로 부모 영역의 크기가 자식 크기에 맞게 줄어든 상태로 배치
+
+d-flex-row-reverse : 요소들의 나열 순서를 반대 (기존 : 1 2 3 일 경우 3 2 1 식으로 정렬)
+
+d-flex-column-reverse : 요소들의 나열 순서를 반대  1              3
+                                                 2      >       2
+                                                 3              1
+
+flex-fill : 부모 영역 중 남은 영역을 해당 클래스를 부여 받은 요소가 차지
+
+order-순서 : 요소들의 순서를 임의로 지정
+
+flex-wrap : 웹사이트 witdh 크기만큼 flex 진행 후 줄바꿈
+
+
+출처 : https://kongmemo.tistory.com/7
+
+
 
 - M/P 의 의미
        - P : Padding을 의미
@@ -122,3 +149,43 @@ hidden 영역을 벗어난 부분을 잘라내어 보이지 않게 합니다.
 auto 영역을 벗어난 부분이 있을때만 스크롤을 표시합니다.
 scroll 영역을 벗어난 부분이 없어도 스크롤을 표시합니다.(현재 대부분 브라우저는 auto와 동일하게 작동합니다.)
 출처 : https://velog.io/@rimu/css-%EC%9A%94%EC%86%8C%EC%9D%98-%EC%9C%84%EC%B9%98position-%EC%A0%95%EB%A6%AC
+
+
+(function(){
+
+})();
+>> IIFE(Immediately-invoked function expression: 즉시 작동하는 함수식) : 
+       코드 사이 충돌 예방,
+       전역 변수, 함수가 되지 않도록 방지
+       변수 값 즉시 할당
+       자주 사용되는 키워드 압축
+       출처 : https://findawayer.tistory.com/entry/IIE%EC%9D%98-%EC%9D%98%EB%AF%B8%EB%8A%94
+
+
+
+
+
+justify -content ( 가로축 - 중심축 ) : 가로축을 기준으로 좌우에 대한 정렬
+              - attribute : 	flex-start (default)	>> 요소들을 컨테이너의 왼쪽으로 정렬	
+                                   flex-end		>> 요소들을 컨테이너의 우측으로 정렬
+                                   center			>> 요소들을 컨테이너의 중앙으로 정렬	
+                                   space-between		>> 요소들 사이에 동일한 간격을 둡니다.	
+                                   space-around	       >> 요소들 주위에 동일한 간격을 둡니다.	
+                                   space-evenly(FireFox Only)	>> 첫번째로 오는 정렬 대상 전에 두개 의 인접한 정렬 대상 사이의 간격과					
+                                                                  마지막 정렬 대상 이후의 간격이 같도록 항목이 분산 됩니다.
+
+align-items ( 세로축 - 교차축 ) :  세로축을 기준으로 정렬
+              - attribute : flex-start		         컨테이너의 최상단으로 정렬 합니다.
+                            flex-end		         컨테이너의 최하단으로 정렬합니다.
+                            center                        컨테이너의 세로 축의 중앙으로 정렬 합니다.
+                            baseline                      컨테이너의 시작위치에 정렬 합니다.
+                            stretch(default)              컨테이너의 맞게  늘립니다.
+출처: https://ipex.tistory.com/entry/CSS3-flex-Box-justifycontent-alignitems [깍돌이:티스토리]
+
+
+
+
+js foreach()
+forEach() 메서드는 배열에 활용이 가능한 메서드로, 파라미터로 주어진 함수를 배열 요소 각각에 대해 실행하는 메서드이다.
+
+map() 메서드와 거의 비슷하지만 차이점은 따로 return 하는 값이 없다는 점이다.
