@@ -67,7 +67,7 @@
         spaceBetween: 30,
         loop: true,
         speed: 1000,
-        navigation:true,
+        navigation:false,
         autoplay: {
           delay: 5000,
           disableOnInteraction: false,
@@ -78,9 +78,11 @@
           }
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
+
+
     });
 
     // 포트폴리어 필터
@@ -110,6 +112,27 @@
             }
         })
     });
+
+    // 로딩
+    let preloader = document.getElementById('Preloader');
+    if(preloader){
+      window.addEventListener('load', function(){
+        preloader.style.display = 'none';
+      });
+    }
+
+    const gototopbtn = document.querySelector('.backtotop');
+    window.addEventListener("scroll", function(){
+      if(this.window.scrollY > 300){
+        gototopbtn.classList.add("active");
+        gototopbtn.classList.add("top");
+      } else{
+        gototopbtn.classList.remove("active");
+        gototopbtn.classList.remove("top");
+
+      }
+    })
+
 
 })();
 
