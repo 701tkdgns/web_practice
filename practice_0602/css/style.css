@@ -349,7 +349,7 @@ nav.active {
   font-size: 32px;
   background-color: #aaa;
   border: .1px solid #aaa;
-  border-radius: 5px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -473,7 +473,7 @@ nav.active {
   color: #fff;
   background-color: rgba(170, 170, 170, 0.384);
   width: 40px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #Reviews .swiper-button-next:hover,
@@ -627,9 +627,7 @@ nav.active {
 #Team .Team-member{
   margin-bottom: 20px;
   overflow: hidden;
-  border-radius: 5px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .Team-member .member-img{
@@ -640,7 +638,8 @@ nav.active {
 .Team-member .member-img img{
   width: 100%;
   background-size: cover !important;
-  border: 1px solid rgba(170, 170, 170, 0.233);
+  border: 1px solid rgba(170, 170, 170, 0.3);
+  border-radius: 5px;
 }
 
 .Team-member .member-img .member-social-links{
@@ -702,8 +701,8 @@ nav.active {
   color: #777777;
 }
 .Team-member:hover .member-social-links {
-  opacity: 1;
   bottom: 15px;
+  opacity: 1;
 }
 
 
@@ -806,15 +805,17 @@ nav.active {
 }
 
 #Footer .footer-top .social-links a{
-  font-size: 28px;
+  font-size: 24
+  px;
   display: inline-block;
   background: #292929;
   color: #fff;
   line-height: 1;
-  padding-top: 5px;
-  margin-right: 4px;
-  border-radius: 4px;
+  padding-top: 7px;
+  margin-right: 10px;
+  border-radius: 50px;
   text-align: center;
+  align-items: center;
   width: 36px;
   height: 36px;
   transition: .3s;
