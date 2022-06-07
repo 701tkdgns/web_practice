@@ -16,7 +16,6 @@
         } else {
             nav.classList.remove('bg-dark');
             nav.classList.remove('active');
-
         }
     });
 
@@ -98,7 +97,7 @@
 
 
     // backToTop 버튼
-    const gtbtn = document.querySelector('.backtotop');
+    let gtbtn = document.querySelector('.backtotop');
     window.addEventListener("scroll", function(){
       if(window.scrollY > 700){
         gtbtn.classList.add("active");
