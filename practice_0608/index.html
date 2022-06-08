@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/practice_0608/css/style.css">    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row zepeto">
+            <div class="col-lg-6 part-left-side">
+                <div class="table-responsive zepeto_list">
+                    <div>
+                        <h2>[주요 지표]</h2>
+                    </div>
+                    <table class="table table-bordered zepeto_size">
+                        <tr>
+                            <td class="table_list_title">출시일</td>
+                            <td class="table_list_content_odd">2018년 8월 전 세계 165개 국에 출시</td>
+                        </tr>
+                        <tr>
+                            <td class="table_list_title">제작사</td>
+                            <td class="table_list_content_even">네이버 Z (네이버 자회사)</td>
+                        </tr>
+                        <tr>
+                            <td class="table_list_title">누적 이용자</td>
+                            <td class="table_list_content_odd">2억 명, 해외 이용자 비중 90% (2021년 2월 기준)</td>
+                        </tr>
+                        <tr>
+                            <td class="table_list_title_2">특징</td>
+                            <td class="table_list_content_even">얼굴 인식, AR, 3D 기술을 활용하여 아바타 생성 후<br>
+                                '제페토 월드' 내에서 맵을 이동하여 게임, 친목 등 다양한 활동 가능</td>
+                        </tr>
+                        <tr>
+                            <td class="table_list_title_2">최근 동향</td>
+                            <td class="table_list_content_odd">2021년 하반 기중 제페토 스튜디오를 통해 이용자 게임 제작 지원<br>
+                                하이브, YG엔터테인먼트, JYP엔터테인먼트에서 총 170억 원 투자 유치</td>
+                        </tr>
+                        <tr>
+                            <td class="table_list_title">광고 상품</td>
+                            <td class="table_list_content_even">제휴형 광고 (아이템, 포토/비디오 부스, 3D 월드 광고 제작) 가능</td>
+                        </tr>
+                        <tr>
+                            <td class="table_list_title">수익 모델</td>
+                            <td class="table_list_content_odd">아바타 아이템 판매, 마케팅 제휴를 통한 광고 상품 판매</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-6 part-right-side">
+                <div class="right-header">
+                    <h2 style="color: white; text-align: center; align-items: center;">이용자 데이터</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 doughnutchart">
+                        <canvas id="myDoughnutChart"></canvas>
+                    </div>
+                    <div class="col-lg-6 barchart">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="/practice_0608/scripts/main.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- <div class="attribute_of_zepeto">
+    <div class="row">
+        <div class="col-lg-12 text-center" style="background-color: rgba(170, 170, 170, 0.267);">
+            <h2>[주요 지표]</h2>
+        </div>
+    </div>
+    <div class="row list_attribute_of_zepeto">
+        <div class="col-xxl-2 title_attribute_of_zepeto">
+            <h6>출시일</h6>
+        </div>
+        <div class="col-xxl-10 content_attribute_of_zepeto">
+            <p>2018년 8월 전 세계 165개 국에 출시</p>
+        </div>
+    </div>
+    <div class="row list_attribute_of_zepeto">
+        <div class="col-xxl-2 title_attribute_of_zepeto">
+            <h6>제작사</h6>
+        </div>
+        <div class="col-xxl-10 content_attribute_of_zepeto"
+            style="background-color: rgba(170, 170, 170, 0.267);">
+            <p>네이버 Z (네이버 자회사)</p>
+        </div>
+    </div>
+    <div class="row list_attribute_of_zepeto">
+        <div class="col-xxl-2 title_attribute_of_zepeto">
+            <h6>누적 이용자</h6>
+        </div>
+        <div class="col-xxl-10 content_attribute_of_zepeto">
+            <p>2억 명, 해외 이용자 비중 90% (2021년 2월 기준)</p>
+        </div>
+    </div>
+    <div class="row list_attribute_of_zepeto">
+        <div class="col-xxl-2 title_attribute_of_zepeto">
+            <h6>특징</h6>
+        </div>
+        <div class="col-xxl-10 content_attribute_of_zepeto"
+            style="background-color: rgba(170, 170, 170, 0.267);">
+            <p>얼굴 인식, AR, 3D 기술을 활용하여 아바타 생성 후<br>
+                '제페토 월드' 내에서 맵을 이동하여 게임, 친목 등 다양한 활동 가능</p>
+        </div>
+    </div>
+    <div class="row list_attribute_of_zepeto">
+        <div class="col-xxl-2 title_attribute_of_zepeto">
+            <h6>최근 동향</h6>
+        </div>
+        <div class="col-xxl-10 content_attribute_of_zepeto">
+            <p>2021년 하반 기중 제페토 스튜디오를 통해 이용자 게임 제작 지원<br>
+                하이브, YG엔터테인먼트, JYP엔터테인먼트에서 총 170억 원 투자 유치</p>
+        </div>
+    </div>
+    <div class="row list_attribute_of_zepeto">
+        <div class="col-xxl-2 title_attribute_of_zepeto">
+            <h6>광고 상품</h6>
+        </div>
+        <div class="col-xxl-10 content_attribute_of_zepeto"
+            style="background-color: rgba(170, 170, 170, 0.267);">
+            <p>제휴형 광고 (아이템, 포토/비디오 부스, 3D 월드 광고 제작) 가능</p>
+        </div>
+    </div>
+    <div class="row list_attribute_of_zepeto">
+        <div class="col-xxl-2 title_attribute_of_zepeto">
+            <h6>수익 모델</h6>
+        </div>
+        <div class="col-xxl-10 content_attribute_of_zepeto">
+            <p>아바타 아이템 판매, 마케팅 제휴를 통한 광고 상품 판매</p>
+        </div>
+    </div>
+</div> -->
