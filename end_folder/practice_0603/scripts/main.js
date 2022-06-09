@@ -48,7 +48,7 @@ const d_config = {
     type: "doughnut",
     data: d_data,
     options:{
-        maintainAspectRatio: false,
+        aspectRatio: 1,
         responsive: true,
         plugins:{
             datalabels: {
@@ -67,7 +67,7 @@ const config = {
     type: 'bar',
     data: data,
     options: {
-        // maintainAspectRatio: false,
+        aspectRatio: 1,
         responsive: true,
         animation: {
             onComplete: () => {

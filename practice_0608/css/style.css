@@ -9,24 +9,16 @@ body{
     height: 500px;
 }
 
-.part-left-side{
-    width: 600px;
-    height: 100%;
-}
-
-/* .zepeto_list{
-    height: 100%;
-} */
-
-.zepeto_list .zepeto_size{
-    height: 450px;
-}
-
-.zepeto_list h2{
+.part-left-side h2{
     position: inline-block;
     padding-bottom: 3px;
     text-align: center;
     background-color: rgb(238,238,238);
+}
+
+.zepeto_list .zepeto_size{
+    width: 100%;
+    height: 100%;
 }
 
 .zepeto_list .table_list_title{
@@ -36,17 +28,7 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-top: 16px;
-}
-
-.zepeto_list .table_list_title_2{
-    background-color: rgb(94,43,255);
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding-top: 24px; 
+    padding: 17px 0;
 }
 
 .zepeto_list .table_list_content_even{
@@ -59,28 +41,26 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 13px;
-    padding-top: 18px;
+    padding: 17px 0;
 }
 
 .part-right-side{
     display: relative;
-    width: 600px;
+    width: auto;
     height: 100%;
     background: linear-gradient(rgba(44,44,44,0.3),rgba(44,44,44,0.3)),url(/image_file/jasper-unsplash.jpg);
     background-size: cover;
 }
 
+.chart-container{
+    display: flex;
+    overflow: hidden;
+}
 
 .doughnutchart{
-    position: relative;
-    width: 180px;
-    height: 100%;
-    top: 50px;
+    width:180px
 }
 
 .barchart{
-    position: relative;
-    top: 60px;
-    width: 400px;
-    height: 100%;
+    padding-top: 60px;
 }
