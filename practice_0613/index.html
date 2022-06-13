@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/practice_0613/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/practice_0613/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- nav section -->
+    <section id="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-* fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href=".">Navbar</a>
+
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Portfolios">Portfolios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="Home" class="d-flex align-items-center justify-content-center">
+
+        <div id="particles-js"></div> <!-- particle js : 홈 화면 이펙트 -->
+
+        <div class="container home-title">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 home_intro">
+                    <h1>홈페이지 이름</h1>
+                    <p>홈페이지 소개 문구</p>
+                </div>
+            </div>
+
+            <div class="row gy-4 mt-5 justify-content-center">
+                <div class="col-lg-2 col-md-6">
+                    <a href="#">
+                        <div class="icon-box">
+                            <i class='bx bx-home-alt-2'></i>
+                            <h3>링크</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <a href="#">
+                        <div class="icon-box">
+                            <i class='bx bxs-music'></i>
+                            <h3>링크</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <a href="#">
+                        <div class="icon-box">
+                            <i class='bx bxs-phone'></i>
+                            <h3>링크</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <a href="#">
+                        <div class="icon-box">
+                            <i class='bx bxs-tag'></i>
+                            <h3>링크</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section id="About">
+        <img src="/image_file/jasper-unsplash.jpg" style="background-size: cover;" alt="">
+    </section>
+
+
+    <!-- This is to measure FPS (stats.js by mrdoob: https://github.com/mrdoob/stats.js/) -->
+    <script src="https://mrdoob.github.io/stats.js/build/stats.min.js"></script>
+    <script src="/practice_0613/scripts/Particles.js "></script>
+    <script src="/practice_0613/scripts/bootstrap.bundle.min.js"></script>
+    <script src="/practice_0613/scripts/jquery.min.js"></script>
+    <script src="/practice_0613/scripts/main.js"></script>
+</body>
+
+</html>
